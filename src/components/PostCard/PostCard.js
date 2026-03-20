@@ -6,7 +6,7 @@ import './PostCard.css';
 
 const PostCard = ({ post }) => {
   const { id, title, score, num_comments, subreddit, author, created_utc, selftext } = post;
-  
+
   // Si le MediaRenderer refuse de rendre quelque chose (retourne null), il y aura peut-être du texte.
   // Géré directement ci-dessous.
 
@@ -18,7 +18,7 @@ const PostCard = ({ post }) => {
         <span className="score">{score}</span>
         <button className="vote-btn">▼</button>
       </div>
-      
+
       {/* ===== CONTENU PRINCIPAL ===== */}
       <div className="post-content">
         {/* En-tête */}
@@ -45,8 +45,8 @@ const PostCard = ({ post }) => {
         {/* Extrait de texte si pas de selftext vide (et si pas de media on peut l'afficher) */}
         {selftext && (
           <div className="post-selftext-preview">
-            {selftext.substring(0, 300)}
-            {selftext.length > 300 && '...'}
+            {selftext.substring(0, 2500)}
+            {selftext.length > 2500 && '...'}
           </div>
         )}
 

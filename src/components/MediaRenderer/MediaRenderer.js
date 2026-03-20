@@ -38,6 +38,7 @@ const MediaRenderer = ({ post }) => {
             ref={videoRef}
             controls
             muted
+            onPlay={(e) => { e.target.muted = false; }}
             className="post-video"
             poster={post.thumbnail || post.thumbnail_url}
             preload="metadata"
