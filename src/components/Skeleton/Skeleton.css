@@ -1,0 +1,113 @@
+/* Animation pulse basique */
+@keyframes skeleton-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+  background-color: var(--color-border);
+  border-radius: 4px;
+}
+
+/* === SkeletonCard === */
+.skeleton-card {
+  display: flex;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.skeleton-votes {
+  width: 40px;
+  background-color: var(--color-background-soft, var(--color-background-soft));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 4px;
+  gap: 8px;
+}
+
+.skeleton-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.skeleton-score {
+  width: 24px;
+  height: 16px;
+  margin: 4px 0;
+}
+
+.skeleton-content {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-header {
+  display: flex;
+  align-items: center;
+}
+
+.skeleton-text {
+  height: 16px;
+}
+
+.skeleton-title {
+  height: 24px;
+  border-radius: 6px;
+}
+
+.skeleton-media {
+  height: 300px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.skeleton-footer {
+  display: flex;
+  height: 20px;
+  margin-top: 8px;
+}
+
+/* === SkeletonComment === */
+.skeleton-comment {
+  padding: 12px 16px;
+  margin: 12px 0;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 8px;
+}
+
+.skeleton-comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.skeleton-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.skeleton-comment-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 40px;
+}

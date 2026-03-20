@@ -1,0 +1,14 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feed-empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-text-light);
+  font-size: 16px;
+  background: var(--color-background-soft);
+  border-radius: 8px;
+}

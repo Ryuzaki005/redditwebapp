@@ -1,0 +1,29 @@
+:root {
+  --color-background: #3d3939;        /* Fond global le plus sombre */
+  --color-background-soft: #4a4646;   /* Surfaces secondaires */
+  --color-card: #5a5555;              /* Surface des cartes/panneaux */
+  --color-card-hover: #6b6565;        /* Carte en survol */
+  --color-text: #f0eded;
+  --color-text-light: #bdb8b8;
+  --color-border: #6e6969;
+  --color-border-soft: #5e5959;
+  --color-accent: #ff6a33;
+  --color-input-bg: #504b4b;          /* Fonds des champs de saisie */
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

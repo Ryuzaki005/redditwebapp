@@ -1,0 +1,187 @@
+.post-card {
+  display: flex;
+  background: var(--color-card);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 500px;
+  width: 75%;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  background: var(--color-card-hover);
+}
+
+.post-votes {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  padding: 12px 8px;
+  background: var(--color-background-soft);
+  min-width: 60px;
+}
+
+.vote-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--color-text-light);
+  padding: 4px;
+}
+
+.vote-btn:hover {
+  color: var(--color-accent);
+}
+
+.score {
+  font-weight: bold;
+  margin: 4px 0;
+  color: var(--color-text);
+}
+
+.post-content {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-card);
+  color: var(--color-text);
+}
+
+.post-header {
+  display: flex;
+  gap: 8px;
+  color: var(--color-text-light);
+  font-size: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.subreddit {
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.post-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-title {
+  margin: 0 0 12px 0;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 900;
+  color: var(--color-text);
+}
+
+.post-title-link:hover .post-title {
+  color: var(--color-accent);
+}
+
+/* === ZONE MÉDIA === */
+.post-media-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  background: var(--color-background-soft);
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.preview-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.preview-video {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: cover;
+  background: black;
+}
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: cover;
+  background: var(--color-background-soft);
+  border-radius: 4px;
+}
+
+.post-footer {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;         /* Colle le footer en bas si la carte est plus haute */
+}
+
+.comments-link {
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.comments-link:hover {
+  color: var(--color-accent);
+}
+
+/* === RESPONSIVE MOBILE === */
+@media (max-width: 600px) {
+  .post-card {
+    display: flex;
+    background: var(--color-card);
+    border: 1px solid var(--color-border-soft);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 400px;
+    width: 75%;
+    transition: box-shadow 0.2s;
+  }
+
+  .post-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .post-votes {
+    display: flex;
+    /* flex-direction: column; */
+
+    flex-direction: column;
+    width: 95%;             /* Plus de largeur sur petit écran */
+    min-height: 350px;      /* Légèrement réduit */
+  }
+
+  .post-votes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+  }
+
+  .post-media-preview {
+    max-height: 300px;      /* Réduit sur mobile */
+  }
+
+  .preview-video,
+  .preview-image {
+    max-height: 300px;
+  }
+}
+
+/* Déjà défini plus haut, ces styles sont unifiés */

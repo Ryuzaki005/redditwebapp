@@ -1,0 +1,42 @@
+/* src/components/Comment/Comment.css */
+.comment {
+  padding: 12px;
+  border-left: 2px solid var(--color-border);
+  margin-bottom: 8px;
+  background-color: var(--color-background-soft);
+  border-radius: 4px;
+}
+
+.comment-header {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--color-text-light);
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.comment-body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.comment-replies {
+  margin-left: 20px;
+  margin-top: 10px;
+  border-left: 1px dashed var(--color-border);
+  padding-left: 10px;
+}
+
+/* Dans PostDetailPage.css, ajouter pour la liste */
+.comments-list {
+  margin-top: 16px;
+}
